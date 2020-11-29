@@ -56,6 +56,14 @@
       "last_name": "Patel",
       "email": "pateldipen161@gmail.com",
       "password": "qwertyuiop"
+    },
+    {
+      "id": "7",
+      "team_id": "0",
+      "first_name": "asdadasd",
+      "last_name": "addasdasd",
+      "email": "tirthak.shah@tatvasoft.com",
+      "password": "Tatva@123$##"
     }
   ]
 }

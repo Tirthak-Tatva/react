@@ -25,12 +25,8 @@ i18n.use(initReactI18next).init({
   debug: true,
   resources,
   interpolation: {
-    escapeValue: false,
-    formatSeparator: "."
+    escapeValue: false 
   },
-  react: {
-    wait: true
-  }
 });
 
 export default i18n;

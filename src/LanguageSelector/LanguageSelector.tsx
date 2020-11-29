@@ -1,6 +1,5 @@
 import React from "react";
 import i18n from "i18next";
-import "../translations/config";
 import { Component } from "react";
 
 class LanguageSelector extends Component {

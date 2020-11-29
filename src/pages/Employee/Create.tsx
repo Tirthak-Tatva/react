@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { RouteComponentProps } from 'react-router-dom';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import { withTranslation } from 'react-i18next';
-import i18n from '../../translations/i18n';
+import i18n from '../../translations/config';
 import ValidationFormSchema from '../../validationSchema/ValidationFormSchema';
 import {IFormState} from '../../api/types/types'
 
@@ -54,7 +53,7 @@ class Create extends Component<RouteComponentProps<any>, IFormState> {
                                 password: values.password,
                             }
                             this.setState({ submitSuccess: true, values: [...this.state.values, formData], loading: false });
-                            axios.post(`http://localhost:5000/employees`, formData).then(data => [
+                            axios.post(`http://localhost:5000/employees`, formData).then(() => [
                                 setTimeout(() => {
                                     this.props.history.push('/');
                                 }, 1500)

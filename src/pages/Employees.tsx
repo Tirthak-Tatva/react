@@ -5,7 +5,7 @@ import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { withTranslation } from "react-i18next";
 import { IProps, IState } from "../api/types/stateProps";
-import i18n from '../translations/i18n';
+import i18n from '../translations/config';
 import { Popups } from '../component/popup'
 
 class Employees extends React.Component<IProps, IState> {
